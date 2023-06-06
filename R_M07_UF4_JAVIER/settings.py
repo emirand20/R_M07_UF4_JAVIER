@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'R_M07_UF4_JAVIER.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db.instituto',
+        'USER': 'user_phpmyadmin',
+        'PASSWORD': 'passwrd_phpmyadmin',
+        'HOST': 'localhost',
+        'PORT': '3307',
     }
 }
 
