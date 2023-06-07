@@ -22,6 +22,9 @@
   <div>
     <label><b>Bio:</b></label> {{ student.bio }}
   </div>
+  <td><a href="{% url 'student_update' student.id %}">EDIT</a></td>
+  <br>
+  <td><a href="{% url 'student_delete' student.id %}">DELETE</a></td>
 </div>
 {% endfor %}
 {% endblock %}
