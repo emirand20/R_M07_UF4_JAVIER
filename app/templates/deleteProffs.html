@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1>Formulario School</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <p>Elimina a "{{ teacher.name }}" total no existe nadie !!</p>
+    <button><a href="{% url 'proffs' %}">TURN ON</a></button>
+    <input type="submit" value="CONFIRM" />
+</form>
+
+{% endblock %}
